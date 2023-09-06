@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sudokugame
+Version: 0.1.0
+Summary: AA Python package to generate sudoku
+Author-email: Don Sabu <donsabu@protonmail.com>
+Keywords: sudoku,project
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sudoku
+repository for maintaining sudoku pypi package

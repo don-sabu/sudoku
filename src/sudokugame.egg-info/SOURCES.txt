@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/sudoku/__init__.py
+src/sudoku/generator.py
+src/sudoku/sudokuGenerator.py
+src/sudokugame.egg-info/PKG-INFO
+src/sudokugame.egg-info/SOURCES.txt
+src/sudokugame.egg-info/dependency_links.txt
+src/sudokugame.egg-info/top_level.txt
+tests/test_generator.py
