@@ -13,7 +13,7 @@ class TestSudokuValidator(unittest.TestCase):
                         [1, 7, 4, 9, 8, 5, 3, 2, 6],
                         [2, 3, 8, 4, 7, 6, 1, 9, 5],
                         [6, 9, 5, 3, 1, 2, 7, 4, 8]]
-        result = sudoku.is_valid_grid(sudoku_table)
+        result = sudoku.validate(sudoku_table)
         self.assertIsNotNone(result)  # Check if the result is not None
         self.assertIsInstance(result, bool)  # Check if the result is a string
         self.assertTrue(result)
@@ -28,7 +28,7 @@ class TestSudokuValidator(unittest.TestCase):
                         [1, 7, 4, 9, 8, 5, 3, 2, 6],
                         [2, 3, 8, 4, 7, 6, 1, 9, 5],
                         [6, 9, 5, 3, 1, 2, 7, 4, 8]]
-        result = sudoku.is_valid_grid(sudoku_table)
+        result = sudoku.validate(sudoku_table)
         self.assertIsNotNone(result)  # Check if the result is not None
         self.assertIsInstance(result, bool)  # Check if the result is a string
         self.assertFalse(result)

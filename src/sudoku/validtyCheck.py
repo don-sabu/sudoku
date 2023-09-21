@@ -1,5 +1,5 @@
 from . import checker
 
 
-def is_valid_grid(grid):
+def validate(grid):
     return checker.isValid(grid)

@@ -8,7 +8,7 @@ version = "0.2.0"
 authors = [
   { name="Don Sabu", email="donsabu@protonmail.com" },
 ]
-description = "AA Python package to generate sudoku"
+description = "A Python package to generate sudoku"
 readme = "README.md"
 requires-python = ">=3.7"
 keywords = ["sudoku", "project"]
