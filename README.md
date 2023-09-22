@@ -9,7 +9,7 @@ pip install sudokugame
 Repository for maintaining sudokugame pypi package
 
 
-Currently, this package is under prerelease development.
+Currently, this package is under pre-release development.
 
 Features:
 * Checks if a 9x9 sudoku is valid
