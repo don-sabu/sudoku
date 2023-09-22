@@ -117,6 +117,3 @@ class Generator:
         sudoku.fillValues()
         # sudoku.printSudoku()
         return sudoku.mat
-
-
-print(Generator.generate_sudoku())
