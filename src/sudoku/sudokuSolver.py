@@ -44,6 +44,6 @@ def solveSudoku(grid, row, col):
 
 def solver(grid):
     if solveSudoku(grid, 0, 0):
-        printing(grid)
+        return grid
     else:
-        print("no solution exists ")
+        return [0]

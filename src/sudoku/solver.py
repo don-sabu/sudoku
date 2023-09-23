@@ -1,4 +1,4 @@
-import sudokuSolver as ss
+from . import sudokuSolver as ss
 
 
 def solve(grid):
