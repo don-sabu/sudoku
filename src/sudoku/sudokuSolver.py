@@ -26,7 +26,7 @@ def isSafe(grid, row, col, num):
 
 
 def solveSudoku(grid, row, col):
-    if (row == N - 1 and col == N):
+    if row == N - 1 and col == N:
         return True
     if col == N:
         row += 1
@@ -47,5 +47,3 @@ def solver(grid):
         printing(grid)
     else:
         print("no solution exists ")
-
-
