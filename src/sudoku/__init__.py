@@ -1,2 +1,2 @@
 from .generator import generate
-from .validtyCheck import validate
+from .checker import validate
