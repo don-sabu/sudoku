@@ -1,6 +1,6 @@
 # Sudoku
 ## sudokugame PyPi Package
-####  v0.2.0
+####  v1.0.0
 
 ```shell
 pip install sudokugame
