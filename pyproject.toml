@@ -4,9 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sudokugame"
-version = "0.2.0"
+version = "1.0.0"
 authors = [
   { name="Don Sabu", email="donsabu@protonmail.com" },
+  { name="Aneeta Jose", email="aneetajose@tutanota.com" },
 ]
 description = "A Python package to generate sudoku"
 readme = "README.md"

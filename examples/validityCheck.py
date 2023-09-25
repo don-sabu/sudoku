@@ -1,6 +1,3 @@
-# This file contains some changed methods
-
-
 import sudoku as sk
 true_grid = [[3, 8, 7, 2, 4, 1, 5, 6, 9],
              [5, 2, 9, 6, 3, 7, 8, 1, 4],
@@ -11,7 +8,7 @@ true_grid = [[3, 8, 7, 2, 4, 1, 5, 6, 9],
              [1, 7, 4, 9, 8, 5, 3, 2, 6],
              [2, 3, 8, 4, 7, 6, 1, 9, 5],
              [6, 9, 5, 3, 1, 2, 7, 4, 8]]
-print(sk.is_valid_grid(true_grid))
+print(sk.validate(true_grid))
 false_grid = [[3, 8, 7, 2, 4, 1, 5, 6, 9],
               [5, 2, 9, 6, 3, 7, 8, 1, 4],
               [4, 6, 1, 5, 3, 8, 2, 7, 3],
@@ -21,4 +18,4 @@ false_grid = [[3, 8, 7, 2, 4, 1, 5, 6, 9],
               [1, 7, 4, 9, 8, 5, 3, 2, 6],
               [2, 3, 8, 4, 7, 6, 1, 9, 5],
               [6, 9, 5, 3, 1, 2, 7, 4, 8]]
-print(sk.is_valid_grid(false_grid))
+print(sk.validate(false_grid))

@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: sudokugame
-Version: 0.2.0
-Summary: AA Python package to generate sudoku
-Author-email: Don Sabu <donsabu@protonmail.com>
+Version: 1.0.0
+Summary: A Python package to generate sudoku
+Author-email: Don Sabu <donsabu@protonmail.com>, Aneeta Jose <aneetajose@tutanota.com>
 Keywords: sudoku,project
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -22,12 +22,13 @@ pip install sudokugame
 Repository for maintaining sudokugame pypi package
 
 
-Currently, this package is under prerelease development.
+Currently, this package is under pre-release development.
 
 Features:
 * Checks if a 9x9 sudoku is valid
+* Solve given sudoku
+* Generate sudoku grid
 
 Features to be added:
-* Generate sudoku grid
-* Solve given sudoku
+* Play live sudoku
 
