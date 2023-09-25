@@ -13,8 +13,9 @@ Currently, this package is under pre-release development.
 
 Features:
 * Checks if a 9x9 sudoku is valid
+* Solve given sudoku
 
 Features to be added:
 * Generate sudoku grid
-* Solve given sudoku
+
 
