@@ -1,3 +1,3 @@
-from .generator import generate
-from .checker import validate
-from .solver import solve
+from .driver import generate
+from .driver import validate
+from .driver import solve
