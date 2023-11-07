@@ -60,7 +60,7 @@ class Sudoku:
         for i in range(self.N):
             if self.mat[i][j] == num:
                 return False
-        return True
+            return True
 
     def fillRemaining(self, i, j):
         # Check if we have reached the end of the matrix
