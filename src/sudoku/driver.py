@@ -1,6 +1,7 @@
 from . import validtyCheck
 from . import sudokuGenerator
 from . import sudokuSolver
+from . import showGrid
 
 
 def solve(grid):
@@ -13,3 +14,7 @@ def generate():
 
 def validate(grid):
     return validtyCheck.isValid(grid)
+
+
+def show():
+    return showGrid.printer()
