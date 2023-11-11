@@ -19,3 +19,8 @@ Features:
 Features to be added:
 * Play live sudoku
 
+
+
+```shell
+python -m unittest discover tests
+```
