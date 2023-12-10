@@ -35,6 +35,13 @@ jobs:
         python -m build
         twine check --strict dist/*
 
+    - name: Publish distribution to PyPI
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
+
+
     - name: Set Tag Variable
       id: set_tag
       run: echo "TAG_NAME=v1.0.1" >> $GITHUB_ENV
