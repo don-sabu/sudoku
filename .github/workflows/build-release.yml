@@ -37,6 +37,7 @@ jobs:
     
     - name: Automate Git Tagging
       run: |
+        sudo apt-get install -y toml-cli
         version=$(toml get pyproject.toml package.version --raw)
         git tag -a "v$version" -m "Release v$version"
         git push origin "v$version"
