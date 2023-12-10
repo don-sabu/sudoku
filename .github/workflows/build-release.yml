@@ -35,13 +35,6 @@ jobs:
         python -m build
         twine check --strict dist/*
 
-    - name: Upload to PyPI
-      run: |
-        twine upload dist/*
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-
     - name: Set Tag Variable
       id: set_tag
       run: echo "TAG_NAME=v1.0.1" >> $GITHUB_ENV
@@ -73,3 +66,20 @@ jobs:
         asset_path: dist/${{ env.name }}
         asset_name: ${{ env.name }}
         asset_content_type: application/zip
+
+  pypi-publish:
+    runs-on: ubuntu-latest
+    needs:
+      - release-build
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Retrieve release distributions
+        uses: actions/download-artifact@v3
+        with:
+          name: release-dists
+          path: dist/
+
+      - name: Publish release distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
