@@ -35,14 +35,18 @@ jobs:
         python -m build
         twine check --strict dist/*
 
+    - name: Set Tag Variable
+      id: set_tag
+      run: echo "TAG_NAME=v1.0.1" >> $GITHUB_ENV
+
     - name: Create GitHub Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.event.ref }}
-        release_name: Release ${{ github.event.ref }}
+        tag_name: ${{ env.TAG_NAME }}
+        release_name: Release ${{ env.TAG_NAME }}
         draft: false
         prerelease: false
 
