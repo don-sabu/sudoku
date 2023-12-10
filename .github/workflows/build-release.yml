@@ -34,4 +34,11 @@ jobs:
         pip install build twine
         python -m build
         twine check --strict dist/*
+    
+    - name: Automate Git Tagging
+      run: |
+        version=$(toml get pyproject.toml package.version --raw)
+        git tag -a "v$version" -m "Release v$version"
+        git push origin "v$version"
+
 
