@@ -1,3 +1,3 @@
 def printer():
-    pass
+    print("Sudokku!!!!")
     # function to show sudoku grid
