@@ -35,16 +35,11 @@ jobs:
         python -m build
         twine check --strict dist/*
 
-    - name: Install toml-cli
-      run: |
-        curl -O -L https://github.com/ajdavis/toml-cli/releases/download/v0.10.0/toml-cli_0.10.0_linux_amd64.tar.gz
-        tar -xzvf toml-cli_0.10.0_linux_amd64.tar.gz
-        sudo mv toml-cli /usr/local/bin/toml-cli
-        rm toml-cli_0.10.0_linux_amd64.tar.gz
-    
-
     - name: Automate Git Tagging
       run: |
+        pip install toml-cli
         version=$(toml get pyproject.toml package.version --raw)
         git tag -a "v$version" -m "Release v$version"
         git push origin "v$version"
+
+
