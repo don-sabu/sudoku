@@ -35,6 +35,12 @@ jobs:
         python -m build
         twine check --strict dist/*
 
+    - name: upload windows dists
+      uses: actions/upload-artifact@v3
+      with:
+        name: release-dists
+        path: dist/
+
     - name: Set Tag Variable
       id: set_tag
       run: echo "TAG_NAME=v1.0.1" >> $GITHUB_ENV
