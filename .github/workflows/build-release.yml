@@ -62,8 +62,14 @@ jobs:
   gitHub-release:
     runs-on: ubuntu-latest
     needs:
-      - build
+      - pypi-publish
     steps:
+      - name: Retrieve release distributions
+        uses: actions/download-artifact@v3
+        with:
+          name: release-dists
+          path: dist/
+
       - name: Set Tag Variable
         id: set_tag
         run: echo "TAG_NAME=v1.0.2" >> $GITHUB_ENV
