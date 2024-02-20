@@ -24,3 +24,5 @@ Features to be added:
 ```shell
 python -m unittest discover tests
 ```
+
+> Before comiting to the master branch, change version in toml file, workflow and in the readme file
