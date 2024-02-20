@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sudokugame"
-version = "1.1.1"
+version = "1.1.2"
 authors = [
   { name="Don Sabu", email="donsabu@protonmail.com" },
   { name="Aneeta Jose", email="aneetajose@tutanota.com" },
