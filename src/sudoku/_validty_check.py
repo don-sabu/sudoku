@@ -1,8 +1,18 @@
+"""
+
+THINGS TO ADD
+
+* Make the constant values that are used more general (like box length, list length etc.)
+
+"""
+
+
 class _ValidGrid:
-    def __int__(self, grid):
+    def __init__(self, grid):
         self.grid = grid
 
-    def _isValidList(self, unique_list):
+    @staticmethod
+    def _isValidList(unique_list):
         if len(unique_list) != len(set(unique_list)):
             return False
         count = 0
@@ -39,6 +49,9 @@ class _ValidGrid:
                 return False
         return True
 
+    def isValid(self):
+        return self._rowValid() and self._columnValid() and self._boxValid()
+
 
 def isValid(table):
-    return rowValid(table) and columnValid(table) and boxValid(table)
+    return _ValidGrid(table).isValid()
