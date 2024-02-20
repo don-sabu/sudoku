@@ -1,6 +1,6 @@
 # Sudoku
 ## sudokugame PyPi Package
-####  v1.1.2
+####  v1.1.3
 
 ```shell
 pip install sudokugame
@@ -24,3 +24,5 @@ Features to be added:
 ```shell
 python -m unittest discover tests
 ```
+
+> Before comiting to the master branch, change version in toml file, workflow and in the readme file
