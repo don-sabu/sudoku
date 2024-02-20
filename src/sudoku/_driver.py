@@ -1,20 +1,20 @@
-from . import validtyCheck
-from . import sudokuGenerator
-from . import sudokuSolver
-from . import showGrid
+from . import _validty_check
+from . import _sudoku_generator
+from . import _sudoku_solver
+from . import _show_grid
 
 
 def solve(grid):
-    return sudokuSolver.solver(grid)
+    return _sudoku_solver.solver(grid)
 
 
 def generate():
-    return sudokuGenerator.Generator.generate_sudoku()
+    return _sudoku_generator.Generator.generate_sudoku()
 
 
 def validate(grid):
-    return validtyCheck.isValid(grid)
+    return _validty_check.isValid(grid)
 
 
 def show():
-    return showGrid.printer()
+    return _show_grid.printer()

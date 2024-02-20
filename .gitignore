@@ -1,6 +1,7 @@
 .git/
-.idea/
 dist/
-trialRun/
 venv/
+.idea/
+trialRun/
+**/__pycache__/
 packageTest.py
