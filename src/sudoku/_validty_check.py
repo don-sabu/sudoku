@@ -3,6 +3,7 @@
 THINGS TO ADD
 
 * Make the constant values that are used more general (like box length, list length etc.)
+* Add documentation
 
 """
 
