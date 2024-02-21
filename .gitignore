@@ -3,5 +3,6 @@ dist/
 venv/
 .idea/
 trialRun/
+References/
 **/__pycache__/
 packageTest.py
