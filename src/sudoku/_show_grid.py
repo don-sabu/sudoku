@@ -4,7 +4,7 @@ def printer():
 
 
 class ShowBoard:
-    def __init__(self, grid, box_width, box_height):
+    def __init__(self, grid, box_width, box_height, empty_cell='0'):
         self.grid = grid
         self.width = box_width
         self.height = box_height
@@ -30,3 +30,5 @@ class ShowBoard:
 
     def showBoardDetails(self):
         pass
+
+
