@@ -72,7 +72,7 @@ jobs:
 
       - name: Set Tag Variable
         id: set_tag
-        run: echo "TAG_NAME=v1.1.3" >> $GITHUB_ENV
+        run: echo "TAG_NAME=v1.1.4" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         id: create_release
